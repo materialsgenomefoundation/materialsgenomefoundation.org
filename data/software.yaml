@@ -75,6 +75,7 @@
 
 - id: kawin
   name: Kawin
+  logo: images/logos/kawin.svg
   description: Multicomponent precipitation and diffusion simulations coupled to CALPHAD.
   links:
     - label: GitHub
