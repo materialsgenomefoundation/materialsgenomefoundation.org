@@ -1,0 +1,82 @@
+# Software listed on /software/, in display order.
+# id:    anchor used in links (/software/#id) and by `featured` on the home page
+# logo:  optional, path under static/
+# badge: optional square, optically centered version of the logo for the round
+#        home-page badge (falls back to `logo`)
+# links: any number of {label, url} pairs
+- id: dfttk
+  name: DFTTK
+  logo: images/logos/dfttk.png
+  badge: images/logos/badges/dfttk.png
+  description: Workflows for computations of a range of properties based on density functional theory.
+  links:
+    - label: GitHub
+      url: https://github.com/phasesresearchlab/dfttk
+    - label: Website
+      url: https://www.dfttk.org/
+    - label: Publication
+      url: https://doi.org/10.1016/j.calphad.2021.102355
+
+- id: sipfenn
+  name: SIPFENN
+  description: Structure-informed prediction of formation energy using neural networks.
+  links:
+    - label: Website
+      url: https://phaseslab.com/sipfenn
+    - label: Publication
+      url: https://doi.org/10.1016/j.commatsci.2022.111254
+
+- id: ascends
+  name: ASCENDS
+  description: Advanced data science toolkit for non-data scientists.
+  links:
+    - label: GitHub
+      url: https://github.com/ornlpmcp/ASCENDS
+    - label: Publication
+      url: https://doi.org/10.21105/joss.01656
+
+- id: pycalphad
+  name: PyCalphad
+  logo: images/logos/pycalphad.svg
+  badge: images/logos/badges/pycalphad.svg
+  description: Python library for computational thermodynamics using the CALPHAD method.
+  links:
+    - label: GitHub
+      url: https://github.com/pycalphad/pycalphad
+    - label: Website
+      url: https://pycalphad.org/
+    - label: Publication
+      url: https://doi.org/10.5334/jors.140
+
+- id: espei
+  name: ESPEI
+  logo: images/logos/espei.svg
+  badge: images/logos/badges/espei.svg
+  description: Thermodynamic database development and uncertainty quantification within the CALPHAD method.
+  links:
+    - label: GitHub
+      url: https://github.com/phasesresearchlab/espei
+    - label: Website
+      url: https://espei.org/
+    - label: Publication
+      url: https://doi.org/10.1557/mrc.2019.59
+
+- id: pduq
+  name: PDUQ
+  description: Phase diagram uncertainty quantification for CALPHAD models.
+  links:
+    - label: Documentation
+      url: https://pduq.readthedocs.io/
+    - label: Publication
+      url: https://doi.org/10.1016/j.actamat.2019.05.017
+
+- id: kawin
+  name: Kawin
+  description: Multicomponent precipitation and diffusion simulations coupled to CALPHAD.
+  links:
+    - label: GitHub
+      url: https://github.com/materialsgenomefoundation/kawin
+    - label: Website
+      url: https://kawin.org/
+    - label: Publication
+      url: https://doi.org/10.1016/j.actamat.2023.118988

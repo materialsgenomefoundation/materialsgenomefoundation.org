@@ -1,0 +1,20 @@
+<div class="contact-grid">
+  <section class="contact-card">
+    <h2>Email</h2>
+    <p>Questions about workshops, software, or the foundation:</p>
+    <p class="contact-address"><a href="mailto:{{ site.Params.email }}">{{ replace site.Params.email "@" "@<wbr>" | safeHTML }}</a></p>
+  </section>
+  <section class="contact-card">
+    <h2>MGF email list</h2>
+    <p>To subscribe, send an email to:</p>
+    <p class="contact-address"><a href="mailto:{{ site.Params.mailingListSubscribe }}">{{ replace site.Params.mailingListSubscribe "@" "@<wbr>" | safeHTML }}</a></p>
+  </section>
+  <section class="contact-card">
+    <h2>Elsewhere</h2>
+    <p>Workshop recordings and source code:</p>
+    <ul class="link-row" role="list">
+      <li><a href="{{ site.Params.youtube }}">YouTube</a></li>
+      <li><a href="{{ site.Params.github }}">GitHub</a></li>
+    </ul>
+  </section>
+</div>

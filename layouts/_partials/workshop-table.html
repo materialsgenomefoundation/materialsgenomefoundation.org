@@ -1,0 +1,30 @@
+<div class="table-wrap">
+  <table class="data-table">
+    <thead>
+      <tr>
+        <th scope="col">Date</th>
+        <th scope="col">Workshop</th>
+        <th scope="col">Recordings</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{- range . }}
+      {{- $workshop := . }}
+      <tr>
+        <td class="cell-date">{{ partial "workshop-date.html" . }}</td>
+        <td class="cell-main">
+          <span class="cell-title">{{ .title }}</span>
+          {{- with .where }}
+          <span class="cell-meta">{{ . }}</span>
+          {{- end }}
+        </td>
+        <td class="cell-link">
+          {{- with .playlist }}
+          <a href="https://www.youtube.com/playlist?list={{ . }}">Playlist<span class="visually-hidden"> for {{ $workshop.title }}</span></a>
+          {{- end }}
+        </td>
+      </tr>
+      {{- end }}
+    </tbody>
+  </table>
+</div>

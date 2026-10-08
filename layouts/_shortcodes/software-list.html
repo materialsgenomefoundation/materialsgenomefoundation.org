@@ -1,0 +1,16 @@
+<ul class="software-grid" role="list">
+  {{- range hugo.Data.software }}
+  <li class="software" id="{{ .id }}">
+    <h2>{{ .name }}</h2>
+    {{- with .logo }}
+    <img class="software-logo" src="{{ . | relURL }}" alt="" loading="lazy">
+    {{- end }}
+    <p>{{ .description }}</p>
+    <ul class="link-row" role="list">
+      {{- range .links }}
+      <li><a href="{{ .url }}">{{ .label }}</a></li>
+      {{- end }}
+    </ul>
+  </li>
+  {{- end }}
+</ul>

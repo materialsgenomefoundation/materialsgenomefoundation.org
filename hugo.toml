@@ -1,0 +1,41 @@
+baseURL = "https://materialsgenomefoundation.org/"
+locale = "en-US"
+title = "Materials Genome Foundation"
+
+# No blog, tags or feeds: the site is a handful of standalone pages.
+disableKinds = ["taxonomy", "term", "rss"]
+
+[params]
+  description = "A nonprofit organization promoting computational approaches in science and engineering through organizing workshops and supporting the development of computational tools and databases."
+  email = "info@materialsgenomefoundation.org"
+  # Address behind the "Join the email list" links.
+  mailingListSubscribe = "mgf-subscribe-request@lists.psu.edu"
+  workshopSite = "https://workshop.materialsgenomefoundation.org/"
+  youtube = "https://www.youtube.com/channel/UC3WW6DQRnLihUt9mOW0ZZfQ/playlists"
+  github = "https://github.com/materialsgenomefoundation"
+  foundedYear = 2018
+  # true: workshop recordings play inline (privacy-enhanced youtube-nocookie.com embeds).
+  # false: recordings render as plain links to the playlists on YouTube.
+  embedYouTube = true
+
+[[menus.main]]
+  name = "Home"
+  pageRef = "/"
+  weight = 10
+[[menus.main]]
+  name = "Workshops"
+  pageRef = "/workshop"
+  weight = 20
+[[menus.main]]
+  name = "Software"
+  pageRef = "/software"
+  weight = 30
+[[menus.main]]
+  name = "Contact"
+  pageRef = "/contact"
+  weight = 40
+
+[module.hugoVersion]
+  # Needs the 0.146+ template layout (layouts/_partials, layouts/_shortcodes),
+  # hugo.Data (0.156) and the `locale` setting (0.158). Built and tested with 0.165.0.
+  min = "0.158.0"

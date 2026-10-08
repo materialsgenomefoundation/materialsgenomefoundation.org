@@ -1,0 +1,20 @@
+<div class="table-wrap">
+  <table class="data-table">
+    <thead>
+      <tr>
+        <th scope="col">Date</th>
+        <th scope="col">Short course</th>
+        <th scope="col">Location</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{- range hugo.Data.courses }}
+      <tr>
+        <td class="cell-date">{{ .when }}</td>
+        <td class="cell-main"><span class="cell-title">{{ .title }}</span></td>
+        <td class="cell-place">{{ .where }}</td>
+      </tr>
+      {{- end }}
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,19 @@
+{{- $upcoming := slice }}
+{{- $past := slice }}
+{{- range hugo.Data.workshops }}
+  {{- if (time.AsTime .date).After now }}
+    {{- $upcoming = $upcoming | append . }}
+  {{- else }}
+    {{- $past = $past | append . }}
+  {{- end }}
+{{- end }}
+
+<h2>Upcoming workshops</h2>
+{{- with $upcoming }}
+{{ partial "workshop-table.html" (sort . "date") }}
+{{- else }}
+<p class="empty">No workshops are scheduled right now. <a href="mailto:{{ site.Params.mailingListSubscribe }}">Join the MGF email list</a> to hear about the next one.</p>
+{{- end }}
+
+<h2>Past workshops</h2>
+{{ partial "workshop-table.html" (sort $past "date" "desc") }}

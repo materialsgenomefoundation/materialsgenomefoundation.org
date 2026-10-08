@@ -1,0 +1,23 @@
+{{ define "main" }}
+<section class="hero">
+  <div class="wrap">
+    <h1>{{ site.Title }}</h1>
+    <div class="hero-lead">{{ .Content }}</div>
+
+    <ul class="tools" role="list">
+      {{- range .Params.featured }}
+      {{- with index (where hugo.Data.software "id" .) 0 }}
+      <li>
+        <a class="tool" href="{{ printf "software/#%s" .id | relURL }}">
+          <span class="tool-badge{{ if .badge }} tool-badge--fitted{{ end }}">
+            <img src="{{ .badge | default .logo | relURL }}" alt="{{ .name }}" loading="lazy">
+          </span>
+          <span class="tool-text">{{ strings.TrimSuffix "." .description }}</span>
+        </a>
+      </li>
+      {{- end }}
+      {{- end }}
+    </ul>
+  </div>
+</section>
+{{ end }}

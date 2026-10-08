@@ -1,0 +1,57 @@
+# Workshops, newest first. Entries dated after the build date show under
+# "Upcoming"; everything else under "Past workshops".
+#
+# date:     YYYY-MM-DD (first day)
+# when:     optional display text that replaces the formatted date, e.g. for multi-day events
+# title:    workshop name
+# where:    optional format/location
+# playlist: optional YouTube playlist ID (the part after `list=`)
+# featured: optional; true shows the playlist under "Recordings"
+- date: 2023-06-25
+  title: SIPFENN, PyCalphad, and ESPEI at the CALPHAD conference
+  where: Boston, in person
+
+- date: 2023-03-02
+  title: pySIPFENN
+  where: Online
+  playlist: PL3dAnZIN7qj1OosUy_cqr1a5I1YWrYQA8
+
+- date: 2022-12-13
+  title: DFTTK
+  where: Online
+  playlist: PL3dAnZIN7qj3QmuxU6qJE4bPxM3wxh8gx
+
+- date: 2022-10-04
+  title: PyCalphad and ESPEI at the STOHT2 conference
+  where: In person
+
+- date: 2022-07-13
+  title: Workshops on ASCENDS, PyCalphad, and ESPEI
+  playlist: PL3dAnZIN7qj1LlGxmbqHaLbhvy3wubOKD
+
+- date: 2021-06-28
+  when: June 28–29, 2021
+  title: "MGF Workshop: PyCalphad and ESPEI"
+  playlist: PL3dAnZIN7qj2k7GNdZ8guZCiTWL92mW25
+  featured: true
+
+- date: 2020-12-08
+  title: "MGF Workshop: PyCalphad and ESPEI"
+  playlist: PL3dAnZIN7qj2yfZM0guE1jyeHhas5ZRfr
+  featured: true
+
+- date: 2020-11-11
+  title: "MGF Workshop: PyCalphad and ESPEI"
+  playlist: PL3dAnZIN7qj1JeQvhGMCp4Ab9OWJG0zBG
+  featured: true
+
+- date: 2020-08-09
+  title: Seminars on PyCalphad, ESPEI, DFTTK, and SIPFENN
+  playlist: PL3dAnZIN7qj3GygzYtERkGbjVkbnM6-7Z
+  featured: true
+
+- date: 2015-07-16
+  title: PyCalphad at SciPy
+  where: Talk by Richard Otis
+  playlist: PL3dAnZIN7qj2cVZg7gdSp2WVxG-hLZ0Ov
+  featured: true
