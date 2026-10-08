@@ -342,9 +342,11 @@ a:hover { text-decoration-color: currentColor; text-decoration-thickness: 2px; }
 
 .software p { grid-area: 2 / 1 / 3 / 3; color: var(--ink-soft); }
 
+/* Fixed height, width up to 7rem so wide wordmarks stay legible. */
 .software-logo {
   grid-area: 1 / 2;
-  width: 4rem;
+  width: auto;
+  max-width: 7rem;
   height: 3.5rem;
   object-fit: contain;
   object-position: right center;

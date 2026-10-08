@@ -19,8 +19,11 @@
 
 - id: sipfenn
   name: SIPFENN
+  logo: images/logos/sipfenn.png
   description: Structure-informed prediction of formation energy using neural networks.
   links:
+    - label: GitHub
+      url: https://github.com/PhasesResearchLab/pySIPFENN
     - label: Website
       url: https://phaseslab.com/sipfenn
     - label: Publication
