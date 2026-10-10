@@ -9,15 +9,15 @@
     <li class="video">
       {{- if site.Params.embedYouTube }}
       <div class="video-frame">
-        <iframe src="https://www.youtube-nocookie.com/embed/videoseries?list={{ .playlist }}" title="{{ .title }} (YouTube playlist)" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe src="https://www.youtube-nocookie.com/embed/videoseries?list={{ .playlist }}" title="{{ .title | markdownify | plainify }} (YouTube playlist)" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </div>
       {{- else }}
       <a class="video-frame video-link" href="https://www.youtube.com/playlist?list={{ .playlist }}">
         <span class="play" aria-hidden="true"></span>
-        <span class="visually-hidden">Watch {{ .title }} on YouTube</span>
+        <span class="visually-hidden">Watch {{ .title | markdownify | plainify }} on YouTube</span>
       </a>
       {{- end }}
-      <p class="video-title">{{ .title }}</p>
+      <p class="video-title">{{ .title | markdownify }}</p>
       <p class="video-date">{{ partial "workshop-date.html" . }}</p>
     </li>
     {{- end }}

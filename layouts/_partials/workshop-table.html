@@ -13,14 +13,14 @@
       <tr>
         <td class="cell-date">{{ partial "workshop-date.html" . }}</td>
         <td class="cell-main">
-          <span class="cell-title">{{ .title }}</span>
+          <span class="cell-title">{{ .title | markdownify }}</span>
           {{- with .where }}
-          <span class="cell-meta">{{ . }}</span>
+          <span class="cell-meta">{{ . | markdownify }}</span>
           {{- end }}
         </td>
         <td class="cell-link">
           {{- with .playlist }}
-          <a href="https://www.youtube.com/playlist?list={{ . }}">Playlist<span class="visually-hidden"> for {{ $workshop.title }}</span></a>
+          <a href="https://www.youtube.com/playlist?list={{ . }}">Playlist<span class="visually-hidden"> for {{ $workshop.title | markdownify | plainify }}</span></a>
           {{- end }}
         </td>
       </tr>
