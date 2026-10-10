@@ -7,9 +7,25 @@
 # where:    optional format/location
 # playlist: optional YouTube playlist ID (the part after `list=`)
 # featured: optional; true shows the playlist under "Recordings"
+- date: 2027-06-13
+  title: "Open-Source Software for Computational Thermodynamics and Kinetics Modeling"
+  where: "Birmingham, UK ([Calphad 2027](https://calphad.org/calphad-2027))"
+
+- date: 2026-06-07
+  title: "Open-Source Software for Computational Thermodynamics and Kinetics Modeling"
+  where: "Québec City, Québec, Canada ([Calphad 2026](https://calphad.org/meetings/2026/index.htm))"
+
+- date: 2025-05-25
+  title: "Open-Source Software for Computational Thermodynamics and Kinetics Modeling"
+  where: "Busan, Korea ([Calphad 2025](https://calphad.org/meetings/2025/index.htm))"
+
+- date: 2024-05-26
+  title: "Open-Source Software for Computational Thermodynamics and Phase Precipitation Modeling"
+  where: "Mannheim, Germany ([Calphad 2024](https://calphad.org/meetings/2024/www.calphad2024.kit.edu/index.html))"
+
 - date: 2023-06-25
-  title: SIPFENN, PyCalphad, and ESPEI at the CALPHAD conference
-  where: Boston, in person
+  title: "SIPFENN, PyCalphad, and ESPEI"
+  where: Boston, USA ([Calphad 2023](https://calphad.org/calphad-2023))
 
 - date: 2023-03-02
   title: pySIPFENN
@@ -22,8 +38,8 @@
   playlist: PL3dAnZIN7qj3QmuxU6qJE4bPxM3wxh8gx
 
 - date: 2022-10-04
-  title: PyCalphad and ESPEI at the STOHT2 conference
-  where: In person
+  title: PyCalphad and ESPEI
+  where: ASU, Arizona, USA (Structure and Thermodynamics of Oxides/carbides/nitrides/borides at High Temperatures, STOHT2)
 
 - date: 2022-07-13
   title: Workshops on ASCENDS, PyCalphad, and ESPEI
