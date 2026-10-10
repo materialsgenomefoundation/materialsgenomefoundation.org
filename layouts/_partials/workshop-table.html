@@ -2,14 +2,14 @@
   <table class="data-table">
     <thead>
       <tr>
-        <th scope="col">Date</th>
+        <th scope="col" class="col-date">Date</th>
         <th scope="col">Workshop</th>
-        <th scope="col">Recordings</th>
+        <th scope="col" class="col-links">Links</th>
       </tr>
     </thead>
     <tbody>
       {{- range . }}
-      {{- $workshop := . }}
+      {{- $title := .title | markdownify | plainify }}
       <tr>
         <td class="cell-date">{{ partial "workshop-date.html" . }}</td>
         <td class="cell-main">
@@ -19,9 +19,19 @@
           {{- end }}
         </td>
         <td class="cell-link">
-          {{- with .playlist }}
-          <a href="https://www.youtube.com/playlist?list={{ . }}">Playlist<span class="visually-hidden"> for {{ $workshop.title | markdownify | plainify }}</span></a>
-          {{- end }}
+          {{- if or .playlist .repo .slides }}
+          <ul class="link-row link-row--compact" role="list">
+            {{- with .playlist }}
+            <li><a href="https://www.youtube.com/playlist?list={{ . }}">{{ partial "icon.html" "youtube" }}Recordings<span class="visually-hidden"> for {{ $title }}</span></a></li>
+            {{- end }}
+            {{- with .repo }}
+            <li><a href="https://github.com/{{ . }}">{{ partial "icon.html" "github" }}GitHub<span class="visually-hidden"> materials for {{ $title }}</span></a></li>
+            {{- end }}
+            {{- with .slides }}
+            <li><a href="{{ . }}">{{ partial "icon.html" "slides" }}Slides<span class="visually-hidden"> for {{ $title }}</span></a></li>
+            {{- end }}
+          </ul>
+          {{- end -}}
         </td>
       </tr>
       {{- end }}

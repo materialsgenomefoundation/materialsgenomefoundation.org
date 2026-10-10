@@ -7,6 +7,8 @@
 # where:    optional format/location
 # playlist: optional YouTube playlist ID (the part after `list=`)
 # featured: optional; true shows the playlist under "Recordings"
+# repo:     optional GitHub repository with the workshop materials, as owner/name
+# slides:   optional URL for slides that aren't already in the repo
 - date: 2027-06-13
   title: "Open-Source Software for Computational Thermodynamics and Kinetics Modeling"
   where: "Birmingham, UK ([Calphad 2027](https://calphad.org/calphad-2027))"
@@ -14,18 +16,22 @@
 - date: 2026-06-07
   title: "Open-Source Software for Computational Thermodynamics and Kinetics Modeling"
   where: "Québec City, Québec, Canada ([Calphad 2026](https://calphad.org/meetings/2026/index.htm))"
+  repo: materialsgenomefoundation/2026-calphad-workshop
 
 - date: 2025-05-25
   title: "Open-Source Software for Computational Thermodynamics and Kinetics Modeling"
   where: "Busan, Korea ([Calphad 2025](https://calphad.org/meetings/2025/index.htm))"
+  repo: materialsgenomefoundation/2025-calphad-workshop
 
 - date: 2024-05-26
   title: "Open-Source Software for Computational Thermodynamics and Phase Precipitation Modeling"
   where: "Mannheim, Germany ([Calphad 2024](https://calphad.org/meetings/2024/www.calphad2024.kit.edu/index.html))"
+  repo: materialsgenomefoundation/2024-calphad-workshop
 
 - date: 2023-06-25
   title: "SIPFENN, PyCalphad, and ESPEI"
   where: Boston, USA ([Calphad 2023](https://calphad.org/calphad-2023))
+  repo: materialsgenomefoundation/2023-workshop-material
 
 - date: 2023-03-02
   title: pySIPFENN
@@ -36,20 +42,24 @@
   title: DFTTK
   where: Online
   playlist: PL3dAnZIN7qj3QmuxU6qJE4bPxM3wxh8gx
+  repo: materialsgenomefoundation/2022-dfttk-workshop-material
 
 - date: 2022-10-04
   title: PyCalphad and ESPEI
   where: ASU, Arizona, USA (Structure and Thermodynamics of Oxides/carbides/nitrides/borides at High Temperatures, STOHT2)
+  repo: materialsgenomefoundation/2022-workshop-material
 
 - date: 2022-07-13
   title: Workshops on ASCENDS, PyCalphad, and ESPEI
   playlist: PL3dAnZIN7qj1LlGxmbqHaLbhvy3wubOKD
+  repo: materialsgenomefoundation/2021-workshop-material
 
 - date: 2021-06-28
   when: June 28–29, 2021
   title: "MGF Workshop: PyCalphad and ESPEI"
   playlist: PL3dAnZIN7qj2k7GNdZ8guZCiTWL92mW25
   featured: true
+  repo: materialsgenomefoundation/2021-workshop-material
 
 - date: 2020-12-08
   title: "MGF Workshop: PyCalphad and ESPEI"
@@ -60,6 +70,7 @@
   title: "MGF Workshop: PyCalphad and ESPEI"
   playlist: PL3dAnZIN7qj1JeQvhGMCp4Ab9OWJG0zBG
   featured: true
+  repo: materialsgenomefoundation/2020-workshop-material
 
 - date: 2020-08-09
   title: Seminars on PyCalphad, ESPEI, DFTTK, and SIPFENN

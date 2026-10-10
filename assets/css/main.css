@@ -372,6 +372,19 @@ a:hover { text-decoration-color: currentColor; text-decoration-thickness: 2px; }
 
 .link-row a:hover { border-color: var(--green-ink); background: var(--surface); }
 
+/* Smaller pills with a leading icon, for table cells */
+.link-row--compact { gap: 0.375rem; }
+
+.link-row--compact a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.1rem 0.65rem;
+  font-size: 0.875rem;
+}
+
+.icon { width: 1em; height: 1em; flex: none; }
+
 /* ---------- Tables (workshops, courses) ---------- */
 
 .table-wrap { overflow-x: auto; }
@@ -402,6 +415,12 @@ a:hover { text-decoration-color: currentColor; text-decoration-thickness: 2px; }
 .data-table th:first-child,
 .data-table td:first-child { padding-left: 0; }
 
+/* Fixed widths keep the upcoming and past workshop tables aligned; the
+   workshop column takes the rest. Links fits Recordings + GitHub pills. */
+.col-date { width: 10.5rem; }
+
+.col-links { width: 15rem; }
+
 .cell-date {
   white-space: nowrap;
   color: var(--ink-soft);
@@ -415,8 +434,6 @@ a:hover { text-decoration-color: currentColor; text-decoration-thickness: 2px; }
   font-size: 0.9375rem;
   color: var(--ink-soft);
 }
-
-.cell-link { white-space: nowrap; }
 
 .cell-place { color: var(--ink-soft); min-width: 12rem; }
 
@@ -441,7 +458,8 @@ a:hover { text-decoration-color: currentColor; text-decoration-thickness: 2px; }
   }
 
   .cell-date { font-size: 0.9375rem; }
-  .cell-link:not(:empty), .cell-place { margin-top: 0.25rem; min-width: 0; }
+  .cell-link:not(:empty) { margin-top: 0.5rem; }
+  .cell-place { margin-top: 0.25rem; min-width: 0; }
 }
 
 /* ---------- Recordings ---------- */
