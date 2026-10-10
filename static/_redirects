@@ -1,0 +1,7 @@
+# Permanent redirects for old-site URLs, read by Cloudflare Pages 
+# These mirror the `aliases:` in front matter, which remain as an HTML fallback.
+# Both slash forms are listed because a rule only matches its exact path.
+/home          /          301
+/home/         /          301
+/new-courses   /workshop/ 301
+/new-courses/  /workshop/ 301
